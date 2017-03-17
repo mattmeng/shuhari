@@ -1,0 +1,27 @@
+<%= form_for(team_member_achievement) do |f| %>
+  <% if team_member_achievement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(team_member_achievement.errors.count, "error") %> prohibited this team_member_achievement from being saved:</h2>
+
+      <ul>
+      <% team_member_achievement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team_member_id %>
+    <%= f.text_field :team_member_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :achievement_id %>
+    <%= f.text_field :achievement_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

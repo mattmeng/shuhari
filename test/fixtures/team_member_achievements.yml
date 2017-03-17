@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  team_member: one
+  achievement: one
+
+two:
+  team_member: two
+  achievement: two
